@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editActivity"
+    android:padding="20dp">
+
+
+    <EditText
+        android:id="@+id/edit_Nis"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+    <EditText
+        android:id="@+id/edit_Nama"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:minLines="3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nama"
+        android:gravity="top"
+        tools:ignore="TouchTargetSizeCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Nis" />
+
+    <EditText
+        android:id="@+id/edit_kelas"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:minLines="3"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Kelas"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Nama" />
+
+    <EditText
+        android:id="@+id/edit_alamat"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:minLines="3"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Alamat"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_kelas" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:text="SAVE"
+        app:backgroundTint="#C132FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_alamat" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="22dp"
+        android:text="UPDATE"
+        app:backgroundTint="#C132FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>
